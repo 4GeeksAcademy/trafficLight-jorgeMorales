@@ -1,12 +1,55 @@
+.semaforo {
+    width: 100px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
 
-/* 
+.light {
+    width: 70px;
+    height: 70px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 10px auto;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+/* Colores de las luces apagadas */
+.red {
+    background-color: rgba(255, 0, 0, 0.4);
+}
 
-*/
+.yellow {
+    background-color: rgba(255, 255, 0, 0.4);
+}
+
+.green {
+    background-color: rgba(0, 255, 0, 0.4);
+}
+
+/* Colores de las luces encendidas con difuminado */
+.light.on.red {
+    background-color: rgba(255, 0, 0, 1);
+    box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.7); /* Difuminado rojo */
+}
+
+.light.on.yellow {
+    background-color: rgba(255, 255, 0, 1);
+    box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.7); /* Difuminado amarillo */
+}
+
+.light.on.green {
+    background-color: rgba(0, 255, 0, 1);
+    box-shadow: 0 0 20px 10px rgba(0, 255, 0, 0.7); /* Difuminado verde */
+}
+
+.purple {
+    background-color: rgba(128, 0, 128, 0.4); /* Púrpura apagado */
+}
+
+.light.on.purple {
+    background-color: rgba(128, 0, 128, 1);
+    box-shadow: 0 0 20px 10px rgba(128, 0, 128, 0.7); /* Difuminado púrpura */
+}
